@@ -4,7 +4,7 @@ function Options({ question, dispatch, answer }) {
     <div className="options">
       {question.options.map((option, index) => (
         <button
-          key={index}
+          key={option}
           disabled={hasAnswered}
           className={`btn btn-option ${index === answer ? "answer" : ""} ${
             hasAnswered
